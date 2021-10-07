@@ -1,0 +1,132 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff; 
+	margin: 0; 
+	font-family: sans-serif; 
+}
+
+header {
+	background-image: url("fishing.jpg");
+	background-size: cover; 
+	background-position: center center;
+	color: black; 
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-height: calc(100vh - 84.8px); 
+}
+
+.content {
+	font-size: 2rem; 
+	margin: auto;
+	max-width: 100%;  
+}
+
+.content h1 {
+	color: black; 
+	margin-bottom: 0; 
+}
+
+.container {
+	padding: 1rem; 
+	width: 1000px; 
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+
+nav i {
+	font-size: 2.5rem;
+	padding: 1rem 0;
+	margin-right: 6rem;
+}
+
+nav ul {
+	display: flex;
+	padding: 1rem;
+	list-style: none;
+}
+
+nav li a {
+	color: black; 
+	padding: 1rem; 
+	text-decoration: none; 
+	font-size: 1.3rem;
+}
+
+nav li a:hover {
+	color: white;
+}
+
+.selected {
+	font-weight: bold; 
+}
+
+.highlighted {
+	background-color: white;
+	color: black; 
+	padding: 1rem; 
+	text-decoration: none; 
+}
+
+.highlighted:hover {
+	background-color: black; 
+	color: white;
+}
+
+footer {
+	background-color: black; 
+	color: white; 
+	padding: .5rem; 
+}
+
+footer ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0; 
+}
+
+footer p {
+	margin: 0;
+	color: rgba(255,255,255,.80);
+}
+
+@media screen and (max-width: 700px) {
+	.content {
+		margin: 2rem auto 0;
+		font-size: 1.2rem; 
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav li:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	nav .highlighted {
+		background: none; 
+	}
+
+	footer ul {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	footer li {
+		margin: 1rem;
+		text-align: center; 
+	}
+}
